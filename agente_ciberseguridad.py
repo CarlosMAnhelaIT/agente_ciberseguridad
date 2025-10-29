@@ -130,7 +130,7 @@ if st.button("Estandarización y L1 Triaje"):
                     3.  **Información Clave para L2:** Extrae y resalta los datos más importantes del log (IP de origen, recurso solicitado, timestamp, user-agent, etc.).
                     4.  **Recomendación de Siguiente Paso:** Sugiere una acción inmediata para el analista L2 (ej: "Verificar si la IP de origen es conocida", "Buscar actividad similar desde esta IP en otros logs").
 
-                    Genera un informe claro y conciso en formato Markdown.
+                    Genera un informe claro y conciso en formato Markdown. Usa la fecha y día del momento actual, en formato legible.
                     """
 
                     response_informe = model.generate_content(prompt_informe)
